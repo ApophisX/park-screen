@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "https://wwww.baidu.com/$1"
+      "dest": "https://sunkoda.us.to:9002/$1"
     },
     {
       "src": "/(.*)",
