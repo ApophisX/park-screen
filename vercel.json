@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "http://sunkoda.us.to:9002/$1"
+      "dest": "http://sunkoda.us.to:9002"
     },
     {
       "src": "/(.*)",
