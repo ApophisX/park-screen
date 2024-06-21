@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "park-screen",
+  "public": true,
+  "builds": [
+    {
+      "src": "dist/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [{ "handle": "filesystem" }, { "src": "/(.*)", "dest": "/dist/index.html" }]
+}
