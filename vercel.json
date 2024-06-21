@@ -9,12 +9,17 @@
   ],
   "routes": [
     {
-      "handle": "filesystem"
-    },
-    {
       "src": "/api/(.*)",
       "dest": "http://sunkoda.us.to:9002/$1"
     },
+    {
+      "src": "/(.*)",
+      "dest": "/dist/$1"
+    },
+    {
+      "handle": "filesystem"
+    },
+
     {
       "src": "/(.*)",
       "dest": "/dist/index.html"
