@@ -9,12 +9,13 @@
   ],
   "routes": [
     {
-      "src": "/dist/(.*)",
+      "src": "/(.*)",
       "dest": "/dist/$1"
     },
     {
       "src": "/(.*)",
       "dest": "/dist/index.html"
     }
-  ]
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/dist/index.html" }]
 }
